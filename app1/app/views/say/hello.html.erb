@@ -1,0 +1,17 @@
+<h1>Hello world</h1>
+<p>
+	Listing the files present in this directory
+	<p>The file names are: </p>
+	<ul>
+       <% for file in @files %>
+        <li> <%= file %> 
+       <% end %>
+	</ul>
+</p>
+<p>
+	Now its  <%= @time %> 
+</p>
+<p>
+Time to say
+<%= link_to "Goodbye!" , say_goodbye_path %>
+</p>
